@@ -379,6 +379,7 @@ template {
 }
 
 .header__wrapper {
+  max-width: 1168px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,7 +406,7 @@ template {
 }
 
 .header__name {
-  padding: 119px 0;
+  padding-top: 119px;
 }
 
 .header__title {
@@ -418,10 +419,34 @@ template {
   margin: 0;
 }
 
+.header__desc {
+  max-width: 562px;
+  font-size: 20px;
+  line-height: 142%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.header__button {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 142%;
+  letter-spacing: -0.01em;
+  padding: 5px 20px;
+}
+
 .logo {
   width: 181.84px;
   height: 30.24px;
-  margin-right: 151.58px;
+  margin-right: 181.58px;
 }
 
 .menu {

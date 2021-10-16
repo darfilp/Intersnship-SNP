@@ -4,6 +4,7 @@
     background-position: center
     background-size: cover
     &__wrapper
+        max-width: 1168px
         display: flex
         flex-direction: column
         justify-content: space-between
@@ -14,7 +15,7 @@
         flex-wrap: wrap
         padding: 30px 0
     &__name
-        padding: 119px 0
+        padding-top: 119px
     &__title
         font-weight: bold
         font-weight: bold
@@ -23,10 +24,29 @@
         text-align: center
         letter-spacing: 0.02em
         margin: 0
+    &__desc
+        max-width: 562px
+        font-size: 20px
+        line-height: 142%
+        text-align: center
+        margin: 0 auto
+        padding: 50px 0
+    &__button
+        position: relative
+        left: 50%
+        transform: translate(-50%, 0)
+        background: #FFFFFF
+        border: none
+        border-radius: 10px
+        text-align: center
+        font-size: 17px
+        line-height: 142%
+        letter-spacing: -0.01em
+        padding: 5px 20px
 .logo
     width: 181.84px
     height: 30.24px
-    margin-right: 151.58px
+    margin-right: 181.58px
 .menu
     max-width: 468px
     width: 100%
@@ -36,3 +56,4 @@
         justify-content: space-between
         align-items: center
         margin: 0
+    &__link
