@@ -1,2 +1,3 @@
 # Intersnship-SNP
-Test task
+
+Do: Filippova Daria
