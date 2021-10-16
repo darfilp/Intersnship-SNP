@@ -407,24 +407,6 @@ template {
   padding: 28.88px 0;
 }
 
-.header__menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FFFFFF;
-}
-
 .header__name {
   padding: 119px 0;
 }
@@ -438,7 +420,7 @@ template {
   letter-spacing: 0.02em;
 }
 
-.logo__img {
+.logo {
   width: 181.84px;
   height: 30.24px;
 }
@@ -458,5 +440,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
