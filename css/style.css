@@ -372,7 +372,8 @@ template {
 }
 
 .header {
-  background-image: url(../img/background.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), color-stop(39.9%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(image.png), url(../img/background.png);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(image.png), url(../img/background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -400,9 +401,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 30px 0;
+  padding: 28px 0;
 }
 
 .header__name {
@@ -466,5 +465,10 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
+  padding: 0;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
