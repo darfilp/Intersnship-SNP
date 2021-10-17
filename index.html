@@ -127,5 +127,69 @@
         </div>
         
     </section>
+    <section class="form">
+        <div class="container">
+            <h2 class="title form__title">Собери свой тур</h2>
+            <p class="descriphion form__descriphion">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+            <div class="form__wrapper">
+                <form action="" class="form__action">
+                    <div class="form__input">
+                        <p class="form__input-text">Имя</p>
+                        <input type="text" class="form__input-form" placeholder="Введите Ваше имя">
+                    </div>
+                    <div class="form__input">
+                        <p class="form__input-text">Направление</p>
+                        <select class="form__input-form" name="">
+                            <option value="Куда хотите поехать?" disabled selected hidden>Куда хотите поехать?</option>
+                            <option class="form__input-select" value="Авторский тур">Авторский тур</option>
+                            <option class="form__input-select" value="Велопрогулка">Велопрогулка</option>
+                            <option class="form__input-select" value="Сплавы">Сплавы</option>
+                            <option class="form__input-select" value="Походы">Походы</option>
+                        </select>
+                    </div>
+                    <div class="form__input">
+                        <p class="form__input-text">Email</p>
+                        <input type="text" class="form__input-form" placeholder="example@mail.com">
+                    </div>
+                    <div class="form__input">
+                        <p class="form__input-text">Телефон</p>
+                        <input type="text" class="form__input-form" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                    </div>
+                    <div class="form__input">
+                        <p class="form__input-text">Дата от</p>
+                        <input type="text" class="form__input-form" placeholder="ДД.ММ.ГГГГ">
+                    </div>
+                    <div class="form__input">
+                        <p class="form__input-text">Дата до</p>
+                        <input type="text" class="form__input-form" placeholder="ДД.ММ.ГГГГ">
+                    </div>
+                    <div class="form__area">
+                        <p class="form__input-text">Комментарий</p>
+                        <textarea class="form__area-form"></textarea>
+                    </div>
+                    <div class="form__input">
+                        <p class="form__input-text">Вам есть 18 лет?</p>
+                        <div class="form__radio">
+                            <div class="form__radio-age">
+                                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                <label for="radio-1" class="form__radio-text">Да</label>
+                            </div>                 
+                        <div class="form__radio-age">
+                                <input id="radio-2" type="radio" name="radio" value="2">
+                                <label for="radio-2" class="form__radio-text">Нет</label>
+                        </div>
+                        </div>
+                    </div>
+                    <label class="form__label">
+                        <input class="booking__checkbox" type="checkbox">
+                        <span class="booking__checkbox-style"></span>
+                        <span class="form__label-text">Нажимая кнопку, я принимаю условия <a href="form__label-link" style="color: #1B1F2B;" >Лицензионного договора</a></span>
+                    </label>
+                </form>
+                <button class="form__button" type="submit">Найти тур</button>
+                <button class="form__button" type="submit">Сбросить</button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
