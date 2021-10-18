@@ -605,6 +605,10 @@ template {
   border-radius: 50px;
 }
 
+.form {
+  margin-bottom: 135px;
+}
+
 .form__title {
   margin-bottom: 30px;
 }
@@ -677,6 +681,15 @@ template {
   color: #1B1F2B;
 }
 
+.form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .form__label-text {
   font-size: 17px;
   line-height: 142%;
@@ -706,5 +719,323 @@ template {
 .form__button:nth-child(3) {
   background: #E0F0E5;
   color: #286562;
+}
+
+.form__checkbox-hidden {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+
+.form__checkbox-style {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #1B1F2B;
+  border-radius: 15%;
+  position: relative;
+  margin-right: 11px;
+}
+
+.form__checkbox-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 75%;
+  height: auto;
+  display: none;
+}
+
+.form__label input:checked + .form__checkbox-style .form__checkbox-mark {
+  display: block;
+}
+
+.reviews {
+  margin-bottom: 135px;
+}
+
+.reviews__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 673px;
+}
+
+.reviews__title {
+  max-width: 529px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.reviews__descriphion {
+  max-width: 418px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.reviews__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 570px;
+  background-color: #F4F0E9;
+  padding: 40px;
+  border-radius: 50px;
+}
+
+.reviews__card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews__card-info-name {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 122%;
+  color: #1B1F2B;
+  margin: 0 0 8px 0;
+}
+
+.reviews__card-info-tour {
+  font-size: 17px;
+  line-height: 142%;
+  letter-spacing: -0.01em;
+  color: #A6A6A6;
+  margin: 0;
+}
+
+.reviews__card-info-photo {
+  width: 75px;
+  height: 75px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100px;
+}
+
+.reviews__card-text {
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 122%;
+  color: #1B1F2B;
+  margin: 0;
+}
+
+.photo__title {
+  margin-bottom: 30px;
+}
+
+.photo__descriphion {
+  max-width: 529px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.photo__wrapper {
+  max-width: 1860px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 30px;
+}
+
+.photo__gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.photo__gallery-one {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../img/photo1.jpg);
+  background-repeat: no-repeat;
+  background-size: 442.5px 300px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+  background-position: center;
+}
+
+.photo__gallery-two {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../img/photo2.jpg);
+  background-repeat: no-repeat;
+  background-size: 442.5px 300px;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+}
+
+.photo__gallery-three {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../img/photo3.jpg);
+  background-repeat: no-repeat;
+  background-size: 442.5px 300px;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+}
+
+.photo__gallery-four {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../img/photo4.jpg);
+  background-repeat: no-repeat;
+  background-size: 442.5px 300px;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+}
+
+.photo__gallery-ten {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../img/photo10.jpg);
+  background-repeat: no-repeat;
+  background-size: 442.5px 300px;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+}
+
+.photo__gallery-eleven {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../img/photo11.jpg);
+  background-repeat: no-repeat;
+  background-size: 442.5px 300px;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+}
+
+.photo__gallery-twelve {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../img/photo12.jpg);
+  background-repeat: no-repeat;
+  background-size: 442.5px 300px;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+}
+
+.photo__gallery-thirteen {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../img/photo13.jpg);
+  background-repeat: no-repeat;
+  background-size: 442.5px 300px;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+}
+
+.photo__gallerys {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+}
+
+.photo__gallerys-five {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../img/photo5.jpg);
+  background-repeat: no-repeat;
+  background-size: 442.5px 300px;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+}
+
+.photo__gallerys-six {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../img/photo6.jpg);
+  background-repeat: no-repeat;
+  background-size: 442.5px 300px;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+}
+
+.photo__gallerys-seven {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../img/photo7.jpg);
+  background-repeat: no-repeat;
+  background-size: 442.5px 300px;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+}
+
+.photo__gallerys-eight {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../img/photo8.jpg);
+  background-repeat: no-repeat;
+  background-size: 442.5px 300px;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+}
+
+.photo__gallerys-nine {
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../img/photo9.jpg);
+  background-repeat: no-repeat;
+  background-size: 442.5px 300px;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 .form
+    margin-bottom: 135px
     &__title
         margin-bottom: 30px
     &__descriphion
@@ -43,6 +44,8 @@
             line-height: 142%
             color: #1B1F2B
     &__label
+        display: flex
+        align-items: center
         &-text
             font-size: 17px
             line-height: 142%
@@ -66,3 +69,24 @@
     &__button:nth-child(3)
         background: #E0F0E5
         color: #286562
+    &__checkbox
+        &-hidden
+            appearance: none
+            position: absolute
+        &-style
+            width: 26px
+            height: 26px
+            border: 2px solid #1B1F2B
+            border-radius: 15%
+            position: relative
+            margin-right: 11px
+        &-mark
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 75%
+            height: auto
+            display: none // Скрываем иконку
+    &__label input:checked + &__checkbox-style &__checkbox-mark
+        display: block
