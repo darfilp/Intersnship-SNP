@@ -398,7 +398,6 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-bottom: 124px;
 }
 
 .header__wrapper {
@@ -438,7 +437,7 @@ template {
 }
 
 .header__desc {
-  max-width: 562px;
+  max-width: 550px;
   font-size: 20px;
   line-height: 142%;
   text-align: center;
@@ -502,17 +501,24 @@ template {
 }
 
 .direction__menu {
+  max-width: 700px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #1B1F2B;
   margin-bottom: 100px;
+}
+
+.direction__list {
+  margin: 0;
+  padding: 0;
 }
 
 .direction__link {
@@ -581,16 +587,19 @@ template {
   font-weight: 500;
   font-size: 35px;
   line-height: 122%;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .direction__text-price {
   font-size: 17px;
   line-height: 142%;
   letter-spacing: -0.01em;
+  margin: 0;
 }
 
 .direction__more {
-  width: 215px;
+  max-width: 150px;
 }
 
 .direction__more-link {
@@ -600,8 +609,8 @@ template {
   border: none;
   background: transparent;
   color: #ffffff;
-  margin-right: 16px;
-  padding: 7px 20px;
+  margin-right: 13px;
+  padding: 0;
 }
 
 .direction__more:hover {
