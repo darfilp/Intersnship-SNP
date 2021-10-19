@@ -419,7 +419,8 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 28px 0;
+  padding-top: 28px;
+  padding-bottom: 28.8px;
 }
 
 .header__name {
@@ -434,15 +435,16 @@ template {
   text-align: center;
   letter-spacing: 0.02em;
   margin: 0;
+  margin-bottom: 50px;
 }
 
 .header__desc {
-  max-width: 550px;
+  max-width: 566px;
   font-size: 20px;
   line-height: 142%;
   text-align: center;
   margin: 0 auto;
-  padding: 50px 0;
+  padding-bottom: 50px;
 }
 
 .header__button {
@@ -486,10 +488,12 @@ template {
   padding: 0;
 }
 
-.menu__link:hover {
-  -webkit-transition-duration: 2.5s;
-          transition-duration: 2.5s;
-  text-decoration: underline;
+.menu__link:hover:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
 }
 
 .direction {
@@ -503,6 +507,11 @@ template {
 .direction__menu {
   max-width: 700px;
   margin: 0 auto;
+  color: #1B1F2B;
+  margin-bottom: 106px;
+}
+
+.direction__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,11 +521,6 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #1B1F2B;
-  margin-bottom: 100px;
-}
-
-.direction__list {
   margin: 0;
   padding: 0;
 }
@@ -528,30 +532,17 @@ template {
   line-height: 122%;
 }
 
-.direction__link::after {
+.direction__link:hover {
   content: '';
   display: block;
-  width: 100%;
-  height: 2px;
-  opacity: 0;
-  color: #EFA501;
-  position: absolute;
-  text-decoration: underline;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  border-bottom: 2px solid #EFA501;
-  -webkit-transition: opacity .1s linear;
-  transition: opacity .1s linear;
-}
-
-.direction__link:not(.selected) a:hover {
-  color: #EFA501;
   border-bottom: 2px solid #1B1F2B;
 }
 
-.direction__link:hover:after {
-  opacity: 1;
+.direction__link:active {
+  content: "";
+  color: #EFA501;
+  display: block;
+  border-bottom: 2px solid #EFA501;
 }
 
 .direction__inner {
@@ -581,6 +572,7 @@ template {
   padding: 50px;
   border-radius: 50px;
   overflow: hidden;
+  cursor: default;
 }
 
 .direction__text-name {
@@ -599,21 +591,35 @@ template {
 }
 
 .direction__more {
-  max-width: 150px;
+  max-width: 135px;
 }
 
 .direction__more-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: bold;
   font-size: 23px;
   line-height: 122%;
   border: none;
   background: transparent;
   color: #ffffff;
-  margin-right: 13px;
   padding: 0;
+  cursor: pointer;
 }
 
-.direction__more:hover {
+.direction__more-img {
+  margin-left: 15px;
+}
+
+.direction__more-link:hover {
+  position: relative;
+  bottom: -7px;
+  left: -20px;
+  padding: 7px 20px;
   background-color: #286562;
   border-radius: 50px;
 }
@@ -627,6 +633,8 @@ template {
 }
 
 .form__descriphion {
+  max-width: 418px;
+  margin: auto;
   margin-bottom: 100px;
 }
 
