@@ -639,6 +639,7 @@ template {
 }
 
 .form__wrapper {
+  width: 1030px;
   background-color: #FFFFFF;
   padding: 70px;
   border-radius: 50px;
@@ -1144,6 +1145,8 @@ template {
 }
 
 .history__descriphion {
+  max-width: 400px;
+  margin: auto;
   margin-bottom: 100px;
 }
 
@@ -1200,7 +1203,7 @@ template {
 .history__network-item {
   font-size: 20px;
   line-height: 142%;
-  margin-left: 35px;
+  margin-left: 37px;
 }
 
 .history__trip-one {
