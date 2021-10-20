@@ -435,7 +435,7 @@ template {
   text-align: center;
   letter-spacing: 0.02em;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 }
 
 .header__desc {
@@ -639,7 +639,6 @@ template {
 }
 
 .form__wrapper {
-  width: 1030px;
   background-color: #FFFFFF;
   padding: 70px;
   border-radius: 50px;
@@ -658,7 +657,7 @@ template {
   font-size: 20px;
   line-height: 142%;
   color: #1B1F2B;
-  margin: 0 0 8px 0;
+  margin: 8px 0 8px 0;
 }
 
 .form__input-form {
@@ -741,7 +740,7 @@ template {
   height: 26px;
   background-color: #ffffff;
   border: 2px solid #1B1F2B;
-  border-radius: 50%;
+  border-radius: 40%;
   position: absolute;
   top: 0;
   left: 0;
@@ -826,7 +825,7 @@ template {
   border: 2px solid #1B1F2B;
   border-radius: 15%;
   position: relative;
-  margin-right: 11px;
+  margin-right: 19px;
 }
 
 .form__checkbox-mark {
