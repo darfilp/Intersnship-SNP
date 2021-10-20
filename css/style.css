@@ -657,11 +657,6 @@ template {
   font-size: 20px;
   line-height: 142%;
   color: #1B1F2B;
-  margin: 0 0 8px 0;
-}
-
-.form__input-age {
-  margin-top: 8px;
 }
 
 .form__input-form {
