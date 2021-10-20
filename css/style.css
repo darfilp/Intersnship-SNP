@@ -657,6 +657,8 @@ template {
   font-size: 20px;
   line-height: 142%;
   color: #1B1F2B;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .form__input-form {
