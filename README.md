@@ -1,4 +1,3 @@
 # Intersnship-SNP
 
-Do: Filippova Daria
-Deploy:
+Deploy: https://darfilp.github.io/Intersnship-SNP/
